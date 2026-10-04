@@ -1,0 +1,29 @@
+:root {
+  --bg: #faf8f5; --card: #fff; --text: #1f1d1a; --muted: #6b655c;
+  --primary: #b4532a; --border: #e4ddd2;
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-body: "Lora", Georgia, serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); line-height: 1.65; }
+h1, h2, h3 { font-family: var(--font-heading); line-height: 1.2; }
+a { color: var(--primary); }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 1.25rem; }
+header.site { border-bottom: 1px solid var(--border); background: var(--card); }
+header.site .wrap { display: flex; justify-content: space-between; align-items: center; padding-block: 1rem; }
+header.site .brand { font-family: var(--font-heading); font-weight: 700; font-size: 1.2rem; text-decoration: none; color: var(--text); }
+header.site nav a { margin-left: 1.25rem; text-decoration: none; }
+footer.site { margin-top: 4rem; padding: 2rem 0; border-top: 1px solid var(--border); color: var(--muted); font-size: .9rem; }
+.hero { padding: 3rem 0 1rem; } .hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); padding: 0; list-style: none; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; display: flex; flex-direction: column; gap: .5rem; }
+.card h3 { margin: 0; }
+.card .exp { font-size: .9rem; color: var(--muted); margin: 0; }
+.btn { margin-top: auto; align-self: flex-start; background: var(--primary); color: #fff; padding: .5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
+.btn:hover { filter: brightness(1.1); }
+.disclosure { font-size: .9rem; color: var(--muted); border-left: 3px solid var(--primary); padding-left: .75rem; }
+.videos { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+.videos iframe { width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 8px; }
+.post-list { list-style: none; padding: 0; } .post-list li { margin-bottom: 1.5rem; }
+.meta { color: var(--muted); font-size: .9rem; }
+article.post { max-width: 720px; }
